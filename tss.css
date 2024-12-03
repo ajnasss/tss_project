@@ -1,0 +1,154 @@
+/* Temel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8e8e8e;
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  .main-container1, .main-container2 {
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+  }
+
+ 
+
+  /* Ana container */
+  .main-container1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1400px;
+    margin: 16px auto;
+    
+   
+  }
+
+  .main-container2 {
+    max-width: 900px;
+    margin: -30px auto;
+    
+  }
+  
+ /* Info Box temel stil */
+ .info-box {
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-box p {
+    margin: 0;
+  }
+  
+  /* Mavi Hava Durumu Box */
+  .info-box.blue {
+    background-color: #4A90E2;
+    font-size: 26px;
+  }
+  
+  .info-box.blue .cloud-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 90px;
+  }
+  
+  /* Kırmızı Takvim Box */
+  .info-box.red {
+    background-color: #e94e3d;
+    font-size: 26px;
+  }
+  
+  .info-box.red .calender-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 90px;
+  }
+  
+  /* Sarı Sebze / Meyve Box */
+  .info-box.yellow {
+    background-color: #f9c947;
+    color: black;
+    justify-content: center;
+    font-size: 26px;
+  }
+  
+  .info-box.yellow .arrow {
+    font-size: 90px;
+    margin-left: 10px;
+  }
+  
+  /* Yeşil Sulama Başlat Box */
+  .info-box.green {
+    background-color: #32cd32;
+    font-size: 26px;
+  }
+  
+  .info-box.green .water-icon {
+    font-size: 90px;
+    margin-left: 10px;
+  }
+
+  main {
+    margin: 20px auto;
+    width: 80%;
+}
+.vegetable_fruit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.vegetable_fruit-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.vegetable_fruit-item img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
